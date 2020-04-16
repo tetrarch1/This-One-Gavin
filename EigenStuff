@@ -1,0 +1,13 @@
+n = 4;
+kyogre = Array[k,{n,n}];
+groudon = Table[Flatten[Table[{0},n]],n];
+Do[Part[Part[groudon,i],i] = eig[i], {i,1,n}] ;
+ryqza = kyogre . groudon .Inverse[kyogre];
+typhlo = Table[Flatten[Table[{0},n]],n];
+Do[Part[Part[typhlo,i],i] = eig[1], {i,1,n}];
+tgkss =RowReduce[ryqza-typhlo];
+riolu = tgkss.ryqza;
+Do[Part[Part[typhlo,i],i] = eig[2], {i,1,n}];
+final = RowReduce[riolu-typhlo];
+Det[final]
+
