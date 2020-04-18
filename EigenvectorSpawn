@@ -1,0 +1,15 @@
+n = 4;
+kyogre = Array[k,{n,n}];
+groudon = Table[Flatten[Table[{0},n]],n];
+Do[Part[Part[groudon,i],i] = eig[i], {i,1,n}] ;
+ryqza = kyogre . groudon .Inverse[kyogre];
+typhlo = Table[Flatten[Table[{0},n]],n];
+Do[Part[Part[typhlo,i],i] = eig[1], {i,1,n}];
+tgkss =RowReduce[ryqza-typhlo];
+riolu = tgkss.ryqza;
+ratatta = Det[kyogre]
+Do[Part[Part[typhlo,i],i] = eig[2], {i,1,n}];
+final = RowReduce[riolu-typhlo];
+Print[final[[1]]];
+For[riolu = 1, riolu <= n, riolu++, Print[final[[riolu]][[n]]];]
+
